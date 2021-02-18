@@ -1,0 +1,32 @@
+{
+    "name": "wc-spa-router",
+    "description": "Simple Router for SPA",
+    "version": "0.1.0",
+    "contributors": [
+        "Uladzimir Urbanovich"
+    ],
+    "license": "BSD-3-Clause",
+    "repository": "https://github.com/v-urbanovich/wc-router",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc --skipLibCheck",
+        "lint": "./node_modules/eslint/bin/eslint.js 'src/**'",
+        "prepare": "rm -rf ./dist && npm run build",
+        "preversion": "npm run lint"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^3.10.1",
+        "@typescript-eslint/parser": "^3.10.1",
+        "eslint": "^7.14.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-lit": "^1.2.4",
+        "eslint-plugin-prettier": "^3.1.3",
+        "prettier": "^2.2.0",
+        "typescript": "^3.9.7"
+    }
+}
